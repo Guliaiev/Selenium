@@ -22,7 +22,7 @@ public class Form {
     static void setUpAll() {
         WebDriverManager.chromedriver().setup();
         //driver = new ChromeDriver(options);
-        //System.setProperty("webdriver.chrome.driver", "./driver/windows/chromedriver.exe");
+       // System.setProperty("webdriver.chrome.driver", "./webdriver/win/chromedriver.exe");
     }
 
     @BeforeEach
