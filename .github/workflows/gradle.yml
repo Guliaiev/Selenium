@@ -20,6 +20,6 @@ jobs:
         java-version: '11'
         distribution: 'adopt'
     - name: java -jar ./artifacts/app-order.jar &
-      run: chmod +x gradlew
+    - run: chmod +x gradlew
     - name: Build with Gradle
-      run: ./gradlew test --info
+    - run: ./gradlew test --info
