@@ -21,7 +21,7 @@ jobs:
       with:
         java-version: '11'
         distribution: 'adopt'
-    - name: Grant execute permission for gradlew
+    - name: java -jar ./artifacts/app-order.jar &
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew test --info
