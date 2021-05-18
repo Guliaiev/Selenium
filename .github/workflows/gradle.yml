@@ -21,6 +21,5 @@ jobs:
           distribution: 'adopt'
       - name: install
         run: java -jar ./artifacts/app-order.jar &
-
       - name: Build with Gradle
         run: ./gradlew test --info "-Dselenide.headless=true"
