@@ -8,7 +8,6 @@ on:
     branches: '*'
   pull_request:
     branches: '*'
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,7 +18,7 @@ jobs:
         with:
           java-version: '11'
           distribution: 'adopt'
-      - name: java -jar ./artifacts/app-order.jar &
-        run: chmod +x gradlew
+      - name: install
+        run: java -jar ./artifacts/app-order.jar &
       - name: Build with Gradle
         run: ./gradlew test --info
